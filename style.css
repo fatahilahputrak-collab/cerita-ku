@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    width:1200px;
+    width:1100px;
     min-height:700px;
     background:#111827;
     border-radius:25px;
@@ -66,12 +66,13 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color:#fdfffc;
+    color:#29d9e9;
 }
 
 /* Hero */
 
 .hero{
+    flex-direction:column-reverse;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -79,18 +80,21 @@ nav a.active{
 }
 
 .content{
-    max-width:520px;
+    max-width:100%;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .content h1{
     color:#fff;
-    font-size:55px;
+    font-size:42px;
     font-weight:700;
 }
 
 .content h2{
     color:#fff;
-    font-size:30px;
+    font-size:26px;
+    margin-top: 50px;
 }
 
 .content span{
@@ -98,12 +102,19 @@ nav a.active{
 }
 
 .content p{
+    margin-top: 320px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 16px;
     color:#cfcfcf;
-    margin:20px 0;
     line-height:1.8;
+    text-align: justify;
 }
 
 button{
+    margin-left: 25px;
+    justify-content: center;
     border:none;
     padding:14px 35px;
     border-radius:30px;
@@ -123,6 +134,7 @@ button:hover{
     display:flex;
     gap:15px;
     margin-top:25px;
+    justify-content: center;
 }
 
 .socials a{
